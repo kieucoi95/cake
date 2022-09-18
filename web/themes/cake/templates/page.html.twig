@@ -1,0 +1,40 @@
+<div class="layout-container">
+    <header id="header" >
+        {% include directory ~ '/templates/includes/header.html.twig' %}
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-12">
+                {% block body %}
+                <div id="main">
+                    {{ page.content }}
+                </div>
+                {% endblock %}
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="sidebar_content mt-3">
+                    <div class="block_content menu_product">
+                        <div class="block_header">
+                            <h2 class="block_title">{{ 'Chuyên mục sản phẩm' | t }}</h2>
+                        </div>
+                        {{ drupal_menu('category') }}
+                    </div>
+                    
+                    <div class="block_content menu_product mt-3">
+                        <div class="block_header">
+                            <h2 class="block_title">{{ 'Sản phẩm bán chạy' | t }}</h2>
+                        </div>
+                        {{ drupal_view('product', 'block_4') }}
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer role="contentinfo">
+        {% include directory ~ '/templates/includes/footer.html.twig' %}
+    </footer>
+</div>

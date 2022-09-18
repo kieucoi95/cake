@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '30798f21c9bc40a97b8bff6513c5e92eff4dfcf5',
+        'reference' => '0e1c509dace01759e5abb8777f16f278c83b62de',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -388,7 +388,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '30798f21c9bc40a97b8bff6513c5e92eff4dfcf5',
+            'reference' => '0e1c509dace01759e5abb8777f16f278c83b62de',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -400,6 +400,24 @@
             'reference' => '8.x-1.11',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/token',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/twig_tweak' => array(
+            'pretty_version' => '3.1.3',
+            'version' => '3.1.3.0',
+            'reference' => '3.1.3',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/twig_tweak',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/ultimate_cron' => array(
+            'pretty_version' => '2.0.0-alpha5',
+            'version' => '2.0.0.0-alpha5',
+            'reference' => '8.x-2.0-alpha5',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/ultimate_cron',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -601,8 +619,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/event-dispatcher-implementation' => array(

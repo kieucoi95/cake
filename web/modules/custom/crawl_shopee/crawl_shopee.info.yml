@@ -1,0 +1,6 @@
+name: 'Crawl Shopee'
+type: module
+description: 'Crawl data from shopee'
+core_version_requirement: ^8.8.0 || ^9 || ^10
+package: 'Custom'
+configure: crawl_shopee.shopee_affiliate

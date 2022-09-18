@@ -1,0 +1,14 @@
+name: Cake Theme
+type: theme
+description: 'Desgin by Kieu Nghiem.'
+package: Other
+core_version_requirement: ^8 || ^9
+base theme: classy
+
+libraries:
+    - cake/global-styling
+    
+regions:
+    header: Header
+    content: Content
+    footer: Footer

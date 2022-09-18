@@ -1,0 +1,44 @@
+global-styling:
+    css:
+        theme:
+            libraries/bootstrap/css/bootstrap.min.css: {minified: true}
+            css/style.css: {}
+            css/fonts.css: {}
+            css/variable.css: {}
+            libraries/fontawesome/css/all.min.css: {}
+    js:
+        libraries/bootstrap/js/bootstrap.min.js: {minified: true}
+        js/script.js: {}
+        libraries/fontawesome/js/all.min.js: {}
+        
+    dependencies:
+            - core/jquery
+            - core/jquery.ui.effects.core
+
+swiper:
+    css:
+        theme:
+            https://unpkg.com/swiper@7.3.2/swiper-bundle.min.css: {type: external, minified: true}
+    js:
+        https://unpkg.com/swiper@7.3.2/swiper-bundle.min.js: {type: external, minified: true}
+
+rating:
+    css:
+        theme:
+            https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css: {type: external, minified: true}
+    js:
+        https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js: {type: external, minified: true}
+
+product_teaser:
+    css:
+        theme:
+            css/product_teaser.css: {}
+    js:
+        js/product_teaser.js: {}
+
+product_full:
+    css:
+        theme:
+            css/product_full.css: {}
+    js:
+        js/product_full.js: {}
